@@ -1,0 +1,367 @@
+@charset "UTF-8";
+
+body, html, #wrapper {
+	height: 100%;
+	color: #424242;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+
+body { background-color: #060606; }
+
+section#top {
+	width: 100%;
+	height: 100%;
+}
+
+header {
+	width: 100%;
+	height: 82px;
+	padding: 12px;
+	background-color: #fff;
+}
+
+div#menu {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	font-size: 32px;
+	cursor: pointer;
+	z-index: 20;
+}
+
+div#menu:before {
+	content: "\2630";
+}
+
+div#madeinua {
+	position: absolute;
+	margin: 0 auto;
+	width: 72px;
+	height: 83px;
+	bottom: 16px;
+	background-image: url("../images/madeinua.png");
+	background-size: 72px 83px;
+	left: 0;
+	right: 0;
+}
+
+nav a {
+	font-family: "Open Sans";
+	font-size: 1.3rem;
+	line-height: 3.8rem;
+	text-transform: uppercase;
+	color: #999 !important;
+	text-decoration: none;
+	transition-duration: .15s;
+}
+
+nav a:hover {
+	color: #ee3b16 !important;
+}
+
+h1.logo-h1 {
+	margin: 0;
+	margin-left: 0.4rem;
+	line-height: 3.2rem;
+	font-family: "Open Sans";
+	font-weight: 500;
+	font-size: 2.2rem;
+	color: #2c3e50;
+}
+
+div#intro {
+	height: -webkit-calc(100% - 82px);
+	background: transparent;
+	/*background-image: url('../images/Mfvw7W40IA0.jpg');
+	/*background-image: url('../images/E6FgIhXyj_E.jpg');*/
+}
+
+h1.intro-h1 {
+	position: relative;
+	padding-top: 10%;
+	color: #fff;
+	margin: 0;
+	text-align: center;
+	font-size: 3rem;
+	font-family: "Open Sans";
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	text-shadow: 1px 10px 15px #000 !important;
+}
+
+div#scrolldown {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 15px;
+	cursor: pointer;
+}
+
+div#scrolldown div {
+	background-image: url('../images/scroll-white.png');
+	position: relative;
+	margin: 0 auto;
+	width: 30px;
+	height: 30px;
+	transition-duration: .15s;
+}
+
+div#scrolldown:hover div {
+	opacity: .5;
+}
+
+section#blog {
+	width: 100%;
+	/*background-color: rgb(247,247,245);*/
+	background-color: #fff;
+	padding-top: 60px;
+	box-shadow: -15px 0 20px rgba(0,0,0,.5);
+}
+
+div#content {
+	margin: 0 auto;
+	width: 95%;
+	padding-bottom: 80px;
+}
+
+article {
+	width: 100%;
+	padding-bottom: 10px;
+	border-bottom: 1px #ccc solid;
+}
+
+div.post-date {
+	display: none;
+	text-align: center;
+	padding-top: 8px;
+}
+
+div.post-date a {
+	color: #000;
+	text-decoration: none;
+}
+
+span.month, span.day {
+	font-family: "Open Sans";
+	font-weight: 300;
+	letter-spacing: 0.1rem;
+	font-size: 1.8rem;
+	display: block;
+	line-height: 32px;
+	text-transform: uppercase;
+}
+
+div.post-content {
+	margin-top: 10px;
+	padding: 10px;
+}
+
+div.post-media {
+	width: 100%;
+}
+
+div.post-media img {
+	width: 100%;
+	height: auto;
+	-webkit-border-radius: 1%;
+}
+
+div.post-title h2 {
+	margin: 0;
+	margin-bottom: 10px;
+	font-family: "Open Sans";
+	font-size: 2.5rem;
+}
+
+div.post-meta h6 {
+	margin: 0;
+	font-family: "Open Sans";
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	color: #a4a4a3;
+}
+
+div.post-title a {
+	color: inherit;
+	text-decoration: none;
+	transition-duration: .15s;
+}
+
+div.post-title a:hover {
+	color: #ee3b16;
+}
+
+div.post-body p {
+	font-family: "Open Sans";
+	font-size: 1rem;
+}
+
+a.continue-link {
+	color: #ee3b16;
+	font-family: "Open Sans";
+	font-size: 1rem;
+	text-decoration: none;
+	transition-duration: .15s;
+}
+
+a.continue-link:hover {
+	color: #ffa593;
+}
+
+div.post-tags {
+	margin-top: 16px;
+}
+
+div.post-tags a {
+    -webkit-border-radius: 3px;
+    border: 1px solid #ccc;
+    padding: 3px 6px;
+    margin: 0 3px 3px 0;
+    line-height: 36px;
+    white-space: nowrap;
+    color: #ccc;
+    font-size: 12px;
+    font-family: "Open Sans";
+    text-decoration: none;
+    transition-duration: .15s;
+    text-transform: uppercase;
+}
+
+div.post-tags a:hover {
+    border-color: #999;
+    color: #999
+}
+
+footer {
+	width: 100%;
+	height: 300px;
+	background-color: #060606;
+	position: relative;
+}
+
+h5#copyright {
+	width: 100%;
+	font-family: "Open Sans";
+	font-size: 1rem;
+	font-weight: 300;
+	letter-spacing: 0.1rem;
+	text-align: center;
+	color: #77777a;
+	position: absolute;
+	bottom: 30px;
+	margin: 0;
+}
+
+div#social-icons {
+	position: absolute;
+	bottom: 140px;
+	text-align: center;
+	left: 0;
+	right: 0;
+}
+
+#facebook, #instagram, #skype {
+	display: inline-block;
+	margin: 0 10px 0 10px;
+	width: 80px;
+	height: 80px;
+}
+
+#facebook {
+	background-image: url('../images/facebook.png');
+}
+
+#instagram {
+	background-image: url('../images/instagram.png');
+}
+
+#skype {
+	background-image: url('../images/skype.png');
+}
+
+#facebook:hover {
+	background-image: url('../images/facebook-hover.png');
+}
+
+#instagram:hover {
+	background-image: url('../images/instagram-hover.png');
+}
+
+#skype:hover {
+	background-image: url('../images/skype-hover.png');
+}
+
+/*Tablets*/
+@media screen and (min-width: 768px) {
+	div#intro {
+  		background-repeat: no-repeat;
+  		background-size: 100% auto;
+	}
+
+	div#content {
+ 		width: 768px;
+	}
+
+	div.post-date {
+		display: block;
+		position: absolute;
+		width: 90px;
+	}
+
+	div.post-content {
+		padding-left: 90px;
+	}
+
+	div.post-body p {
+		padding-right: 12px;
+	}
+}
+
+/*Small desktops/landscape tablets*/
+@media screen and (min-width: 992px) {
+	nav {
+		margin-right: 50px;
+	}
+
+	div#content {
+		width: 75%;
+	}
+
+	div#menu {
+		right: 40px;
+		font-size: 38px;
+		line-height: 50px;
+	}
+
+	h1.logo-h1 {
+		margin-left: 2rem;
+		line-height: 3.4rem;
+		font-family: "Open Sans";
+		font-size: 2.5rem;
+	}	
+
+	h1.intro-h1 {
+		padding-top: 20%;
+		font-size: 5rem;
+		letter-spacing: 0.2rem;
+	}
+}
+/*Large desktops*/
+@media screen and (min-width: 1024px) {
+
+}
+/*Fix #MadeInUa*/
+@media screen and (max-height: 420px) {
+	#madeinua {
+		display: none;
+	}
+}
+/*Retina*/
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+
+}
+
+/*Embed player*/
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin-bottom: 10px; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
