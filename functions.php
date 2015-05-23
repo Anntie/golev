@@ -80,5 +80,5 @@
 	function loadLocalization() {
 		load_theme_textdomain( 'golev', get_template_directory() . '/languages' );
 	}
-	add_action('after_setup_theme', 'loadLocalization()');
+	add_action('after_setup_theme', 'loadLocalization');
 ?>
