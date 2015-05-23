@@ -77,5 +77,8 @@
 	add_filter('get_the_excerpt', 'custom_wp_trim_excerpt');
 
 	//Localization
-	load_theme_textdomain( 'golev', templatepath.'/languages' );
+	function loadLocalization() {
+		load_theme_textdomain( 'golev', get_template_directory() . '/languages' );
+	}
+	add_action('after_setup_theme', 'loadLocalization()');
 ?>
